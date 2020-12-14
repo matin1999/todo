@@ -3,6 +3,14 @@
 @section('content')
     <div class="container">
             <h1>ثبت نام</h1>
+
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+
         <form action="{{route('register')}}" method="post">
             @csrf
 

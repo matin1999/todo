@@ -14,13 +14,13 @@ class NoteActionController extends Controller
      * @param Note $note ID
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function restore(Task $task,Note $note)
+    public function restore(Task $task, $note)
     {
         Note::withTrashed()->find($note)->restore();
 
         return $this->back($task);
     }
-    public function terminate(Task $task,Note $note)
+    public function terminate(Task $task,$note)
     {
         Note::withTrashed()->find($note)->forceDelete();
 

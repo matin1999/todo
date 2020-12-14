@@ -27,6 +27,15 @@
             </div>
 
             <div class="form-group">
+                <label for="tags">tags</label>
+                <select name="tags" class="custom-select" id="tags" multiple>
+                    @foreach($tags as $key=>$value)
+                        <option value="{{$key}}">{{$value}}</option>
+                    @endforeach
+                </select>
+            </div>
+
+            <div class="form-group">
                 <label for="title">تاریخ</label>
                 <input type="text" class="form-control" id="date" name="date">
                 <input type="hidden" id="altField" name="altField">

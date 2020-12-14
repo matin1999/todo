@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8a757e3-9348-42f5-9f82-d6eddfabbc7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/file.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Todo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Todo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/tags/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/tags/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NoteActionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NoteActionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CreateTaskRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CreateTaskRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/tasks/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tasks/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/tasks/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tasks/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -180,7 +176,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -221,7 +217,24 @@
       <workItem from="1607439569784" duration="3954000" />
       <workItem from="1607493772086" duration="4777000" />
       <workItem from="1607502072995" duration="109000" />
-      <workItem from="1607606142875" duration="7024000" />
+      <workItem from="1607606142875" duration="8556000" />
+      <workItem from="1607715614389" duration="1837000" />
+      <workItem from="1607758454180" duration="94000" />
+      <workItem from="1607761170065" duration="1731000" />
+      <workItem from="1607763180658" duration="3483000" />
+      <workItem from="1607772126846" duration="1481000" />
+      <workItem from="1607803124305" duration="220000" />
+      <workItem from="1607807146925" duration="309000" />
+      <workItem from="1607808729378" duration="280000" />
+      <workItem from="1607809033440" duration="26000" />
+      <workItem from="1607809828697" duration="461000" />
+      <workItem from="1607844688295" duration="1410000" />
+      <workItem from="1607860004590" duration="910000" />
+      <workItem from="1607862084189" duration="624000" />
+      <workItem from="1607869550163" duration="34000" />
+      <workItem from="1607892904084" duration="719000" />
+      <workItem from="1607949546859" duration="745000" />
+      <workItem from="1607984463743" duration="3878000" />
     </task>
     <servers />
   </component>

@@ -46,3 +46,4 @@ Route::delete('task/{task}/notes/{note}/terminate', 'NoteActionController@termin
 
 Route::post('tasks/{task}/done', 'DoneTskController')->name('tasks.done');
 
+Route::resource('tags','TagController');

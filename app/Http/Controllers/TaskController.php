@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateTaskRequest;
 use App\Http\Requests\UpdateTaskRequest;
+use App\Models\Tag;
 use App\Models\Task;
 use Carbon\Carbon;
 
@@ -28,7 +29,8 @@ class TaskController extends Controller
      */
     public function create()
     {
-        return view('tasks.create');
+        $tags=Tag::all()->pluck('name','id');
+        return view('tasks.create')->with('tags',$tags);
     }
 
     /**
