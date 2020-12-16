@@ -17,7 +17,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        $tasks = auth()->user()->tasks;
+        $tasks = auth()->user()->tasks()->latest()->get();
 
         return view('tasks.index', compact('tasks'));
     }
@@ -35,7 +35,7 @@ class TaskController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
+     * @var $task Task
      * @param CreateTaskRequest $request
      * @return \Illuminate\Http\Response
      */
@@ -47,6 +47,9 @@ class TaskController extends Controller
             'done' => $request->get('done', false),
             'date' => Carbon::createFromTimestampMs($request->altField),
         ]);
+        if ($request->has('tags')){
+            $task->tags()->sync($request->get('tags'));
+        }
 
         return redirect()->action('TaskController@index')
             ->with('status', 'کار با موفقیت ساخته شد.');

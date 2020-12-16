@@ -28,7 +28,7 @@
 
             <div class="form-group">
                 <label for="tags">tags</label>
-                <select name="tags" class="custom-select" id="tags" multiple>
+                <select name="tags[]" class="custom-select" id="tags" multiple>
                     @foreach($tags as $key=>$value)
                         <option value="{{$key}}">{{$value}}</option>
                     @endforeach

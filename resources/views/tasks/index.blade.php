@@ -20,6 +20,7 @@
                     <a href="{{route('tasks.show',$task)}}">
                     <h5 class="card-title">{{ $task->title }}</h5>
                     </a>
+                    <p class="card-text badge badge-info">{{$task->tags->implode('name', ',')}}</p>
                     <p class="card-title">{{verta($task->date)}}</p>
                     <span class="badge badge-primary">{{ $task->done ? 'انجام شده' : 'انجام نشده' }}</span>
                 </div>
