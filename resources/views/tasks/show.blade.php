@@ -18,6 +18,7 @@
                 </ul>
             </div>
         @endif
+
         @forelse($task->notes()->withTrashed()->get() as $note)
             <div class="card mb-4">
                 <div class="card-body">

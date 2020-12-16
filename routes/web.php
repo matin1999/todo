@@ -47,3 +47,9 @@ Route::delete('task/{task}/notes/{note}/terminate', 'NoteActionController@termin
 Route::post('tasks/{task}/done', 'DoneTskController')->name('tasks.done');
 
 Route::resource('tags','TagController');
+
+Route::get('test',function (){
+   $task=\App\Models\Task::find(12);
+
+   return new \App\Mail\ReminderTaskMail($task);
+});

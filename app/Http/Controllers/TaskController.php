@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateTaskRequest;
 use App\Http\Requests\UpdateTaskRequest;
+use App\Jobs\SendReminderEmailJob;
+use App\Mail\ReminderTaskMail;
 use App\Models\Tag;
 use App\Models\Task;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Mail;
 
 class TaskController extends Controller
 {
@@ -50,6 +53,12 @@ class TaskController extends Controller
         if ($request->has('tags')){
             $task->tags()->sync($request->get('tags'));
         }
+// send mail with out queue
+//        Mail::to(auth()->user()->email)->send(new ReminderTaskMail($task));
+//    Mail::to(auth()->user()->email)->later($task->date,new ReminderTaskMail($task));
+
+        // with queue (mail already have queue)
+        SendReminderEmailJob::dispatch($task)->delay(now()->addMinute(1));
 
         return redirect()->action('TaskController@index')
             ->with('status', 'کار با موفقیت ساخته شد.');
