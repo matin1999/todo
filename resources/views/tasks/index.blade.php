@@ -5,7 +5,9 @@
         <div class="mb-4 d-flex align-items-center justify-content-between">
             <h1>لیست کارها</h1>
             <div>
-            <a href="{{ route('tasks.create') }}" class="btn btn-primary">اضافه کردن</a>
+                <a href="{{ route('logout') }}" class="btn btn-primary"> log out</a>
+
+                <a href="{{ route('tasks.create') }}" class="btn btn-primary">اضافه کردن</a>
             <a href="{{route('tags.index')}}" class="btn btn-secondary">مدیریت تگ ها</a>
             </div>
         </div>

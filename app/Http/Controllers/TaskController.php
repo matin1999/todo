@@ -29,7 +29,7 @@ class TaskController extends Controller
      */
     public function create()
     {
-        $tags=Tag::all()->pluck('name','id');
+        $tags=auth()->user()->tags->pluck('name','id');
         return view('tasks.create')->with('tags',$tags);
     }
 

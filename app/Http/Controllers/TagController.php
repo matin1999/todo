@@ -15,7 +15,7 @@ class TagController extends Controller
      */
     public function index()
     {
-        $tags=Tag::all();
+        $tags=auth()->user()->tags;
         return view('tags.index')->with('tags',$tags);
     }
 
@@ -37,7 +37,7 @@ class TagController extends Controller
      */
     public function store(TagRequest $request)
     {
-        $tag=Tag::create($request->validated());
+        auth()->user()->tags()->create($request->validated());
         return redirect()->action('TagController@index')->with('تگ با موفقیت اضافه شد');
     }
 
